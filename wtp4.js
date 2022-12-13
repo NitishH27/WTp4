@@ -36,7 +36,7 @@ const checkpallindrome = (pallindrome) =>{
 
 process.nextTick(multiplicationTable,12);
 
-setImmediate(checkLeapYeark,2001);
+setImmediate(checkLeapYear,2001);
 
 const intervalHandler = setInterval(checkpallindrome,500,"malayalam");
 
