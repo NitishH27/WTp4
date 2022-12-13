@@ -20,17 +20,17 @@ const checkLeapYear = (year) =>{
 }
 
 
-const checkpallindrome = (pallindrome) =>{
-    var len = pallindrome.length;
-    var half = Math.floor(pallindrome.length/2);
+const checkpalindrome = (palindrome) =>{
+    var len = palindrome.length;
+    var half = Math.floor(palindrome.length/2);
     for (let i = 0; i < half; i++){
-        if(pallindrome[i]!== pallindrome[len-i-1]){
-            console.log("Not a pallindrome");
+        if(palindrome[i]!== palindrome[len-i-1]){
+            console.log("Not a palindrome");
             return;
         }
         
     }
-    console.log("It is a pallindrome");
+    console.log("It is a palindrome");
     
 }
 
@@ -38,7 +38,7 @@ process.nextTick(multiplicationTable,12);
 
 setImmediate(checkLeapYear,2001);
 
-const intervalHandler = setInterval(checkpallindrome,500,"malayalam");
+const intervalHandler = setInterval(checkpalindrome,500,"malayalam");
 
 setTimeout(()=>{
     clearInterval(intervalHandler);
